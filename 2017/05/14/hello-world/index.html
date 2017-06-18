@@ -16,6 +16,9 @@
 
 
 
+
+
+
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
@@ -135,10 +138,6 @@
 
 
   <title>基于Hexo和Github搭建博客 | Stickycandy's blog</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
 
 
@@ -153,6 +152,10 @@
 
 
 
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -441,7 +444,7 @@
       
 
       
-        
+      
       
 
       
@@ -482,12 +485,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="SOHUCS"></div>
     
   </div>
 
@@ -742,26 +740,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://stickycandy.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://stickcandy.com/2017/05/14/hello-world/';
-          this.page.identifier = '2017/05/14/hello-world/';
-          this.page.title = '基于Hexo和Github搭建博客';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://stickycandy.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -780,6 +758,10 @@
   
 
 
+
+
+
+  
 
 
 
@@ -811,7 +793,7 @@
     var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
-    } else if (search_path.endsWith("json")) {
+    } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
     var path = "/" + search_path;
@@ -1123,6 +1105,8 @@
 
 
 
+
+  
 
   
 

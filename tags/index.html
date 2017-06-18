@@ -16,6 +16,9 @@
 
 
 
+
+
+
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
@@ -131,10 +134,6 @@
 
 
   <title>tags | Stickycandy's blog</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
 
 
@@ -149,13 +148,17 @@
 
 
 
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -313,12 +316,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="SOHUCS"></div>
     
   </div>
 
@@ -531,6 +529,10 @@
   
 
   
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+  
 
   
 
@@ -541,26 +543,6 @@
 
   
 
-
-  
-
-    
-      <script id="dsq-count-scr" src="https://stickycandy.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://stickcandy.com/tags/index.html';
-          this.page.identifier = 'tags/index.html';
-          this.page.title = 'tags';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://stickycandy.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
 
   
 
@@ -582,6 +564,10 @@
   
 
 
+
+
+
+  
 
 
 
@@ -613,7 +599,7 @@
     var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
-    } else if (search_path.endsWith("json")) {
+    } else if (/json$/i.test(search_path)) {
       isXml = false;
     }
     var path = "/" + search_path;
@@ -925,6 +911,8 @@
 
 
 
+
+  
 
   
 
