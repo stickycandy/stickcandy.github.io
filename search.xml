@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2018%2F11%2F17%2Ftest%2F</url>
+    <content type="text"><![CDATA[test tittle]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vuex 的actions 和 mutations 的使用场景]]></title>
     <url>%2F2017%2F08%2F05%2Fvuex%2F</url>
     <content type="text"><![CDATA[可以看一下知乎上作者的回答 区分 actions 和 mutations 并不是为了解决竞态问题，而是为了能用 devtools 追踪状态变化。事实上在 vuex 里面 actions 只是一个架构性的概念，并不是必须的，说到底只是一个函数，你在里面想干嘛都可以，只要最后触发 mutation 就行。异步竞态怎么处理那是用户自己的事情。vuex 真正限制你的只有 mutation 必须是同步的这一点（在 redux 里面就好像 reducer 必须同步返回下一个状态一样）。 既然设计出来，我的理解可以这样使用： 异步操作天然要定义成 action 可以把 mutation 看作单一职责，actions 是 mutation 的组合体 也就是说，如果多个函数对 state 做了同样的操作，应该把这些操作提取出来，放到 mutation 中，这些函数定义成 action]]></content>
